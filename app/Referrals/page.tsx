@@ -81,7 +81,7 @@ export default function Referrals() {
         navigator.clipboard.writeText(invitationLink);
 
         // Abre la ventana de compartir en Telegram
-        const telegramShareURL = `https://t.me/share/url?url=${encodeURIComponent(invitationLink)}&text=Join SomeDAO app and start collecting precious $pSOME!`;
+        const telegramShareURL = `https://t.me/share/url?url=${encodeURIComponent(invitationLink)}&text=Join SomeDAO app, invite your friends and start collecting precious $pSOME!`;
         window.open(telegramShareURL, '_blank');
     };
 
