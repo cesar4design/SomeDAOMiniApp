@@ -1,0 +1,8 @@
+.shoptext {
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 16px;
+    color: #FFFF33;
+    -webkit-text-stroke: 4px #723600;
+    paint-order: stroke fill;
+}

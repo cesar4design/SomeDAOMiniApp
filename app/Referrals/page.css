@@ -1,0 +1,71 @@
+.top-section-ref {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.top-section-ref img {
+    max-width: 140px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.links-container button {
+    font-family: "Poppins", system-ui;
+    background-color: #1769C9;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+    min-width: 110px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.referral-list {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.friends-text {
+    color: black;
+    font-weight: 500;
+}
+
+.friends-conatiner {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #AA9DB6;
+    border-style: dashed;
+    padding: 14px;
+    gap: 8px;
+}
+
+.friend-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.friend-container p {
+    color: black;
+    font-weight: 600;
+}
+
+.friend-container .points-text {
+    color: rgb(65, 65, 65) ;
+}
+
+.nofriend-text {
+    width: 100%;
+    text-align: center;
+}

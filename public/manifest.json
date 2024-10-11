@@ -1,0 +1,7 @@
+{
+    "url": "https://some-app-two.vercel.app/Home/",
+    "name": "Some Dao App",
+    "iconUrl": "https://some-app-two.vercel.app/coin.png",
+    "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/terms-of-use.txt",
+    "privacyPolicyUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/privacy-policy.txt"
+  }

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+  
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: linear-gradient(166.63deg, #F0ECF4 0%, #E7DDF2 100%);
+}
+
+h1 {
+    font-size: 20px;
+  
+}
+
+button {
+    outline: none; /* Elimina el borde de enfoque */
+    box-shadow: none; /* Elimina cualquier sombra en el botón al hacer clic */
+    user-select: none; /* Evita que el texto sea seleccionable */
+    -webkit-tap-highlight-color: transparent; /* Elimina el efecto de "highlight" en móviles */
+}
+
+button:focus {
+    outline: none; /* Elimina el borde de enfoque al usar el tab */
+    box-shadow: none; /* Elimina cualquier sombra */
+}
+
+button:active {
+    outline: none; /* Elimina el borde de enfoque cuando está activo */
+    box-shadow: none; /* Elimina la sombra cuando está activo */
+}

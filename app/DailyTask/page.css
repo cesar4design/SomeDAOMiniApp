@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main-section {
+    background: linear-gradient(166.63deg, #F0ECF4 0%, #E7DDF2 100%);
+}
+
+.top-section-daily {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.dayly-rewards-gui {
+    position: relative;
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.daily-rewards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cinco columnas */
+    gap: 8px;
+    /* Espaciado entre los ítems */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+.day-container {
+    position: relative;
+    font-weight: 600;
+    padding: 12px 16px;
+    border: 2px solid #AA9DB6;
+    border-style: dashed;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.day-text {
+    font-size: 18px;
+}
+
+.claimed {
+    background-color: #176ac932;
+}
+
+.point-text {
+    color: rgb(47, 47, 47);
+}
+
+.check-img {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+
+}
+
+/* Define la animación para el parpadeo */
+@keyframes blink {
+    0% {
+        background-color: #176ac932;
+    }
+
+    50% {
+        background-color: transparent;
+        /* Color del parpadeo */
+    }
+
+    100% {
+        background-color: #176ac932;
+    }
+}
+
+/* Aplica la animación solo cuando canClaim está activo */
+.day-container.active {
+    animation: blink 2s infinite;
+    /* 1 segundo de duración, ciclo infinito */
+    cursor: pointer;
+}
