@@ -119,7 +119,7 @@ export default function Referrals() {
                         <img src="coin.svg" alt="" />
                         <h3>Your Friends:</h3>
                     </div>
-                    <h3 className='friends-text'>{invitedFriends.length} Friends</h3>
+                    <h3 className='friends-text'>{invitedFriends.length}</h3>
                 </div>
                 <div className='friends-conatiner'>
 
