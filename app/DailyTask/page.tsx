@@ -170,7 +170,7 @@ export default function Tasks() {
     <section className='main-section'>
       <section className='top-section-daily'>
         <h2>Daily Check-in</h2>
-        <p>Example text here, example text here. </p>
+        <p>Collect the daily login bonus and stack more $SOME! </p>
       </section>
 
 
