@@ -169,8 +169,8 @@ export default function Tasks() {
   return <>
     <section className='main-section'>
       <section className='top-section-daily'>
-        <h2>Daily Check-in</h2>
-        <p>Collect the daily login bonus and stack more $SOME! </p>
+        <h2>Daily Rewards</h2>
+        <p>Collect the daily login bonus and stack more $SOME!</p>
       </section>
 
 
