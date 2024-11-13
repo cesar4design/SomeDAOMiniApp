@@ -170,7 +170,7 @@ export default function Tasks() {
     <section className='main-section'>
       <section className='top-section-daily'>
         <h2>Daily Rewards</h2>
-        <p>Collect the daily login bonus and stack more $SOME!</p>
+        <p>Collect the daily login bonus and stack more <strong>$SOME</strong>!</p>
       </section>
 
 
@@ -188,7 +188,7 @@ export default function Tasks() {
                   <div className={`day-container ${isClaimed ? 'claimed' : ''} ${(canClaim && isNextDay && !isClaimed) ? 'active' : ''}`}>
                     <p className='day-text'>Day {DayThreshold}</p>
                     <p className='point-text'>+{DayPoints}</p>
-                    <p className='point-text'>$pSOME</p>
+                    <p className='point-text'>$SOME</p>
                     {isClaimed && (
                       <>
                         <img className='check-img' src="./check.svg" alt="Check" />
