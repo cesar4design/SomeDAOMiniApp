@@ -58,7 +58,7 @@ export default function Page() {
 
             <div className="loading-screen">
               <div className="bg-blur">
-                <h1>SomeDAO App</h1>
+                <h1>SomeDAO App </h1>
                 <Spinner />
                 <p>Loading...</p>
 
