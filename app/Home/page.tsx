@@ -610,7 +610,7 @@ export default function Home() {
     <section className='main-section'>
       <section className='top-section'>
         <img src="coin.svg" alt="" />
-        <h1>{points.toLocaleString('en-US')} $pSOME</h1>
+        <h1>{points.toLocaleString('en-US')} $SOME</h1>
         <p>Example text here</p>
       </section>
 
@@ -624,7 +624,7 @@ export default function Home() {
         </div>
         <div className={!canClaim ? 'task-conatiner bg-ts' : 'task-conatiner'}>
           <div>
-            <p>Boost $pSOME</p>
+            <p>Boost $SOME</p>
             <p className='points-text'>+2000</p>
           </div>
           <button onClick={sendTon} >
