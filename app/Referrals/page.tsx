@@ -105,7 +105,8 @@ export default function Referrals() {
             <section className='top-section-ref'>
                 <h2>Invite Friends</h2>
                 <img src="coin.svg" alt="" />
-                <p>Example text here, example text here, example text here. </p>
+                <p>Get DOUBLE rewards for every friend you invite. 2x500 $SOME. 
+Limited time only!</p>
             </section>
 
             <section className='links-container'>
