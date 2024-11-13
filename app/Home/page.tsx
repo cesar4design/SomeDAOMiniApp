@@ -314,7 +314,7 @@ export default function Home() {
     if (completedTasks['join_discord'] || isLoading || isLoadingDiscord) return;
     seIsLoading(true);
     seIsLoadingDiscord(true);
-    window.open('https://discord.com', '_blank');
+    window.open('https://discord.com/invite/AE8HvVtgNj', '_blank');
     const userDocRef = doc(db, 'users', userData.id.toString());
 
     setTimeout(async () => {
