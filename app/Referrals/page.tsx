@@ -81,8 +81,7 @@ export default function Referrals() {
         navigator.clipboard.writeText(invitationLink);
 
         // Abre la ventana de compartir en Telegram
-        const telegramShareURL = `https://t.me/share/url?url=${encodeURIComponent(invitationLink)}&text=Join SomeDAO App and start collecting $SOME.
-Get +1000 $SOME as a first-time gift. Limited time only!`;
+        const telegramShareURL = `https://t.me/share/url?url=${encodeURIComponent(invitationLink)}&text=Join SomeDAO App and start collecting $SOME. Get +1000 $SOME as a first-time gift. Limited time only!`;
         window.open(telegramShareURL, '_blank');
     };
 
@@ -106,7 +105,7 @@ Get +1000 $SOME as a first-time gift. Limited time only!`;
             <section className='top-section-ref'>
                 <h2>Invite Friends</h2>
                 <img src="coin.svg" alt="" />
-                <p>Get DOUBLE rewards for every friend you invite. 2x500 $SOME. 
+                <p>Get <strong>DOUBLE</strong> rewards for every friend you invite. <strong></>2 x 500 $SOME</strong>. 
 Limited time only!</p>
             </section>
 
