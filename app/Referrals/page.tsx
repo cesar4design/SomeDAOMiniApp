@@ -105,7 +105,7 @@ export default function Referrals() {
             <section className='top-section-ref'>
                 <h2>Invite Friends</h2>
                 <img src="coin.svg" alt="" />
-                <p>Get <strong>DOUBLE</strong> rewards for every friend you invite. <strong></>2 x 500 $SOME</strong>. 
+                <p>Get <strong>DOUBLE</strong> rewards for every friend you invite. <strong>2 x 500 $SOME</strong>. 
 Limited time only!</p>
             </section>
 
@@ -128,7 +128,7 @@ Limited time only!</p>
                         invitedFriends.map((friend) => (
                             <div className="friend-container" key={friend.id}>
                                 <p> {friend.username} </p>
-                                <p className='points-text'>{friend.newUserPoints} $pSOME</p>
+                                <p className='points-text'>{friend.newUserPoints} $SOME</p>
                             </div>
                         ))
                     ) : (
