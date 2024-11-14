@@ -1,8 +1,14 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
 .shoptext {
-    text-align: center;
-    padding-top: 30vh;
-    font-size: 32px;
+    font-size: 32px; /* Adjust as needed */
     color: #FFFF33;
     -webkit-text-stroke: 4px #723600;
     paint-order: stroke fill;
+    text-align: center;
 }
