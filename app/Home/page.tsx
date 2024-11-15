@@ -534,7 +534,7 @@ export default function Home() {
         ...(await getDoc(userDocRef)).data()?.completedTasks,
         input_EVM_task: true,
       },
-      points: (await getDoc(userDocRef)).data()?.points + 100,
+      points: (await getDoc(userDocRef)).data()?.points + 500,
     });
 
     setCompletedManualTask(true);
@@ -565,7 +565,7 @@ export default function Home() {
   const handleConfirmTaskCode = async () => {
     if (completedManualTaskCode || isLoadingManualTaskCode || !inputTextCode) return;
 
-    if (inputTextCode !== "Uptober") {
+    if (inputTextCode !== "MOONVEMBER") {
       setErrorMessage(' Invalid code, please enter a correct code.');
       return;
     }
@@ -579,7 +579,7 @@ export default function Home() {
         ...(await getDoc(userDocRef)).data()?.completedTasks,
         input_code_task: true,
       },
-      points: (await getDoc(userDocRef)).data()?.points + 100,
+      points: (await getDoc(userDocRef)).data()?.points + 500,
     });
 
     setCompletedManualTaskCode(true);
@@ -595,7 +595,7 @@ export default function Home() {
 
     setTimeout(async () => {
       await updateDoc(userDocRef, {
-        points: (await getDoc(userDocRef)).data()?.points + 250,
+        points: (await getDoc(userDocRef)).data()?.points + 1000,
         isNewUser: false
       });
 
@@ -611,7 +611,7 @@ export default function Home() {
       <section className='top-section'>
         <img src="coin.svg" alt="" />
         <h1>{points.toLocaleString('en-US')} $SOME</h1>
-        <p>Example text here</p>
+        <p>Keep stacking up!</p>
       </section>
 
       <section className='boost-task'>
@@ -665,7 +665,7 @@ export default function Home() {
         {!completedTasks.input_code_task && (
           <div className={completedTasks.input_code_task ? 'task-conatiner bg-ts' : 'task-conatiner'}>
             <div>
-              <p>Enter AMA secret code</p>
+              <p>Enter secret code</p>
               <p className='points-text'>+500</p>
             </div>
             <button disabled={completedTasks.input_code_task} onClick={handleOpenModalCode}>
@@ -841,7 +841,7 @@ export default function Home() {
         {isModalOpenCode && (
           <div className='modal'>
             <div className='modal-content'>
-              <p>Enter AMA secret code</p>
+              <p>Enter secret code</p>
               <input
                 type='text'
                 value={inputTextCode}
@@ -873,11 +873,11 @@ export default function Home() {
         <div className='modal-content-reward'>
 
           <h2>Welcome to SomeDAO!</h2>
-          <p>Here are your first points</p>
-          <h3>+250 $SOME</h3>
+          <p>We have a gift for you!</p>
+          <h3>+1000 $SOME</h3>
 
           <button onClick={handleNewUserReward}>
-            Start!
+            Claim!
           </button>
 
         </div>
