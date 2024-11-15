@@ -253,6 +253,7 @@ export default function Home() {
   const [isLoadingLens, seIsLoadingLens] = useState(false);
 
   const [isLoadingRetweet, setIsLoadingRetweet] = useState(false);
+  const [isLoadingRetweet2, setIsLoadingRetweet2] = useState(false);
   const [isLoadingFollowSersilverstone, setIsLoadingFollowSersilverstone] = useState(false);
 
   const handleFollowTwitter = async () => {
@@ -412,6 +413,24 @@ export default function Home() {
     }, 8000);
   };
 
+const handleRetweet2 = async () => {
+  if (completedTasks['twitter_retweet_2'] || isLoadingRetweet2) return;
+  setIsLoadingRetweet2(true);
+  window.open('https://x.com/intent/retweet?tweet_id=1768044874819895462', '_blank');
+  const userDocRef = doc(db, 'users', userData.id.toString());
+
+  setTimeout(async () => {
+    await updateDoc(userDocRef, {
+      completedTasks: {
+        ...(await getDoc(userDocRef)).data()?.completedTasks,
+        twitter_retweet_2: true,
+      },
+      points: (await getDoc(userDocRef)).data()?.points + 300,
+    });
+    setIsLoadingRetweet2(false);
+  }, 8000);
+};
+  
   const handleFollowSersilverstone = async () => {
     if (completedTasks['twitter_follow_sersilverstone'] || isLoading || isLoadingFollowSersilverstone) return;
     seIsLoading(true);
@@ -648,6 +667,17 @@ export default function Home() {
       </div>
       <button onClick={handleRetweet}>
         {isLoadingRetweet ? 'Loading' : (completedTasks.twitter_retweet ? <img className='done-task-img' src="./checkl.svg" alt="" /> : 'Retweet')}
+      </button>
+    </div>
+  )}
+         {!completedTasks.twitter_retweet_2 && (
+    <div className={completedTasks.twitter_retweet_2 ? 'task-conatiner bg-ts' : 'task-conatiner'}>
+      <div>
+        <p>Retweet on X</p>
+        <p className='points-text'>+300</p>
+      </div>
+      <button onClick={handleRetweet2}>
+        {isLoadingRetweet2 ? 'Loading' : (completedTasks.twitter_retweet_2 ? <img className='done-task-img' src="./checkl.svg" alt="" /> : 'Retweet')}
       </button>
     </div>
   )}
