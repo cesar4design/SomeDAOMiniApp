@@ -640,17 +640,17 @@ export default function Home() {
             <h3>Time-limited tasks</h3>
           </div>
         </div>
-        {!completedTasks.twitter_retweet && (
-          <div className={completedTasks.twitter_retweet ? 'task-conatiner bg-ts' : 'task-conatiner'}>
-            <div>
-              <p>Retweet</p>
-              <p className='points-text'>+300</p>
-            </div>
-            <button onClick={handleRetweet}>
-              {isLoadingRetweet ? 'Loading' : (completedTasks.twitter_retweet ? <img className='done-task-img' src="./checkl.svg" alt="" /> : 'Retweet')}
-            </button>
-          </div>
-        )}
+       {false && !completedTasks.twitter_retweet && (
+    <div className={completedTasks.twitter_retweet ? 'task-conatiner bg-ts' : 'task-conatiner'}>
+      <div>
+        <p>Retweet</p>
+        <p className='points-text'>+300</p>
+      </div>
+      <button onClick={handleRetweet}>
+        {isLoadingRetweet ? 'Loading' : (completedTasks.twitter_retweet ? <img className='done-task-img' src="./checkl.svg" alt="" /> : 'Retweet')}
+      </button>
+    </div>
+  )}
         {!completedTasks.twitter_follow_sersilverstone && (
           <div className={completedTasks.twitter_follow_sersilverstone ? 'task-conatiner bg-ts' : 'task-conatiner'}>
             <div>
