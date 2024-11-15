@@ -640,7 +640,7 @@ export default function Home() {
             <h3>Time-limited tasks</h3>
           </div>
         </div>
-       {false && !completedTasks.twitter_retweet && (
+       {!completedTasks.twitter_retweet && (
     <div className={completedTasks.twitter_retweet ? 'task-conatiner bg-ts' : 'task-conatiner'}>
       <div>
         <p>Retweet</p>
