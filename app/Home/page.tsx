@@ -163,7 +163,7 @@ export default function Home() {
 
     const now = new Date();
 
-    const destinationAddress = 'UQDuGvQBuXU18ig2Te0jJZKLOGleYcEzcu0k9AGfGeUmOUz2' // Dirección predeterminada
+    const destinationAddress = 'UQBYEPdFbidxjay1Qj3ZfUCHiduLskXqBMDg5GIxt1Napm6f' // Dirección predeterminada
     const userDocRef = doc(db, 'users', userData.id.toString());
 
     try {
@@ -172,7 +172,7 @@ export default function Home() {
         messages: [
           {
             address: destinationAddress,
-            amount: '15000000', // 0.015 TON in nanotons
+            amount: '39000000', // 0.039 TON in nanotons
           },
         ],
       }
@@ -190,7 +190,7 @@ export default function Home() {
             ...(await getDoc(userDocRef)).data()?.completedTasks,
             buy_boost: true,
           },
-          points: (await getDoc(userDocRef)).data()?.points + 2000,
+          points: (await getDoc(userDocRef)).data()?.points + 3000,
           lastBoostClaim: Timestamp.fromDate(now),
 
         });
@@ -625,7 +625,7 @@ export default function Home() {
         <div className={!canClaim ? 'task-conatiner bg-ts' : 'task-conatiner'}>
           <div>
             <p>Boost $SOME</p>
-            <p className='points-text'>+2000</p>
+            <p className='points-text'>+3000</p>
           </div>
           <button onClick={sendTon} >
             {!canClaim ? <img className='done-task-img' src="./checkl.svg" alt="Completed" /> : 'Claim'}
